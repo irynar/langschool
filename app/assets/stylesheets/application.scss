@@ -1,0 +1,11 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+footer {
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         padding: 1rem;
+         background-color:  #DCDCDC;
+        }

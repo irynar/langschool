@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Langschool</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+      <div class='container'>
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer class="footer p-t-1">
+      <div class="container">
+        <div class="pull-right">
+          <nav class="navbar" style="background:transparent; color: black;">
+            <nav class="nav navbar-nav pull-md-left">
+              <a class="nav-item nav-link"><%= link_to 'Про нас', page_path('about')%></a>
+              <a class="nav-item nav-link" href="#">Блог</a>
+              <a class="nav-item nav-link"><%= link_to 'Контакти', page_path('contacts')%></a>
+            </nav>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
